@@ -1,13 +1,29 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.game-area {
+  position: relative;
+  margin: 50px auto;
+  width: 500px;
+  height: 500px;
+  border: 5px solid #fac87b;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.snake-dot {
+  position: absolute;
+  width: 2%;
+  height: 2%;
+  background-color: #42afff;
+  border: 1px solid #fff;
+  z-index: 2;
+}
+
+.snake-food {
+  position: absolute;
+  width: 2%;
+  height: 2%;
+  background: rgb(245, 40, 4);
+  border: 1px solid #fff;
+  z-index: 1;
+}
+
+* {
+  background-color: #1e2124;
 }
